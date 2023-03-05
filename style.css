@@ -1,5 +1,49 @@
+body{
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, system-ui, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: #FBEAEB;
+}
+
 .board{
     width: 75%;
     height: 80vw;
     margin: auto;
+}
+
+.Etch-header{
+    color: whitesmoke;
+    background-color: #2F3C7E;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    margin: 0;
+    letter-spacing: .2rem;
+    font-weight: 780;
+}
+
+.tools-div{
+    background-color: #2F3C7E;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.tools-heading{
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #FBEAEB;
+}
+
+.tools-content{
+    width: 80%;
+    margin: auto;
+}
+
+button{
+    background-color: #FBEAEB;
+    border: none;
+    padding: .5rem 1.5rem;
+    color: #2F3C7E;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    margin-top: 1rem;
 }

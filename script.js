@@ -1,4 +1,6 @@
 const boardDiv = document.querySelector(".board");
+const reset = document.querySelector(".reset");
+let color = "black";
 
 function board(Times) {
 
@@ -14,13 +16,16 @@ function board(Times) {
 
       boardDiv.appendChild(newdiv);
 
+   newdiv.addEventListener("mouseover", setclr)
 
-   newdiv.addEventListener("mouseover", () => {
-      newdiv.style.background = "black"
+   reset.addEventListener("click", () =>{
+      newdiv.style.background = "transparent";
    })
-   }
 
-}
+
+}}
+
+function funask(){
 
 const ask = prompt("how Many cells do you want? enter an number from 1 to 100.")
 if (isNaN(ask)) {
@@ -32,6 +37,15 @@ if (isNaN(ask)) {
    alert("please enter an positive number")
 } else {
    alert("enter a number from 1 to 100")
+}}
+
+funask()
+
+
+function setclr(){
+   this.style.background = color;
 }
 
-
+function changeColor(choice){
+   color = choice;
+}
