@@ -27,7 +27,7 @@ function board(Times) {
 
 function funask(){
 
-const ask = prompt("how Many cells do you want? enter an number from 1 to 100.")
+const ask = prompt("How many cells do you want? Enter an number from 1 to 100.")
 if (isNaN(ask)) {
    alert("enter an valid number")
 } else if (ask >= 1 && ask <= 100) {
